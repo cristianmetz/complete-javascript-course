@@ -110,4 +110,29 @@ console.log('23' * '2'); //the * operator triggers a coercion to convert strings
 let n = '1'+ 1; //11
 n = n - 1;      //10
 console.log(n); //10
+
+
+//Truthy and falsy Values
+//There are 5 falsy values: 0, '', undefined, null, NaN -they will become falsy when converted into a Boolean
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+const money = 0;
+if (money) {
+    console.log(`Don't spend it all!`);
+} else {
+    console.log(`You should get a job!`);
+}
+
+let height;
+
+if(height) {
+    console.log("Yay Height is defined")
+} else {
+    console.log("Height is UNDEFINED")
+}
 */

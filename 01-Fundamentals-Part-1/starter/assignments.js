@@ -80,3 +80,12 @@ is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark
 // } else {
 //     console.log(`John's BMI (${johnBMI}) is higher than Mark's BMI (${markBMI})!`)
 // };
+
+// LECTURE: Type Conversion and Coercion
+// 1. Predict the result of these 5 operations without executing them:
+// 2. Execute the operations to check if you were right
+'9' - '5'; //4
+'19' - '13' + '17'; //617
+'19' - '13' + 17; //23
+'123' < 57; //false
+5 + 6 + '4' + 9 - 4 - 2; //1143 
