@@ -91,4 +91,23 @@ if (birthYear <= 2000) {
     century = 21;
 }
 console.log(century);
+
+
+//Type Conversion..
+const inputYear = '1991';
+console.log(Number(inputYear)); //converts string to numbers
+console.log(inputYear +18); //returns the string 199118
+console.log(Number(inputYear)+18);
+
+console.log(Number('Jonas')); //returns Nan aka AN INVALID NUMBER, conversion fails
+console.log(String(23)); //converts a number to a string
+
+//Type Coercion
+console.log(`I am `+ 23 +` years old`); //the + triggers a coercion to convert numbers to strings
+console.log('23' - '10' - 3); //the - operator triggers a coercion to convert strings into numbers
+console.log('23' * '2'); //the * operator triggers a coercion to convert strings into a number
+
+let n = '1'+ 1; //11
+n = n - 1;      //10
+console.log(n); //10
 */
