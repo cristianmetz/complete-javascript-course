@@ -161,4 +161,29 @@ if (favoriteNumber !== 8) {
     console.log('Why not choose 8?');
 }
 
+
+
+//Boolean Logic & Logical Operators
+ const hasDriversLicense = true; //A
+ const hasGoodVision = true; //B
+
+ console.log(hasDriversLicense && hasGoodVision); // the AND operator is &&
+ console.log(hasDriversLicense || hasGoodVision); // the OR operator is ||
+ console.log(!hasDriversLicense); //the NOT operator is !
+
+//  if (hasDriversLicense && hasGoodVision) {
+//      console.log('Sarah should be able to drive!');
+//  } else {
+//      console.log('Someone else shoudl drive...');
+//  }
+
+ const isTired = true; // C
+ console.log(hasDriversLicense && hasGoodVision && isTired);
+
+ if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log('Sarah should be able to drive!');
+} else {
+    console.log('Someone else shoudl drive...');
+}
+
 */

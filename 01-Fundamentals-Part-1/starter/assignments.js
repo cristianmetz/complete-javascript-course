@@ -1,21 +1,21 @@
 // Values and Varriables
 //1
-// let country = 'The United States of America';
-// let continent = 'North America';
-// let population = 332403650;
+let country = 'The United States of America';
+let continent = 'North America';
+let population = 332403650;
 //2
 // console.log(country, continent, population);
 
 //Data Types
 //1
-// const isIsland = false;
+const isIsland = false;
 // let language = null;
 //2
 // console.log(typeof isIsland,typeof population,typeof country,typeof language);
 
 //let, const and var
 //1
-// language = 'English'
+language = 'English'
 // console.log(language);
 
 //Basic Operators
@@ -29,7 +29,7 @@
 // const finland = 6000000;
 // console.log(population > finland);
 //4
-// const averageCountryPopulation = 33000000;
+const averageCountryPopulation = 33000000;
 // console.log(population < averageCountryPopulation);
 //5
 // const description = country + " is in " + continent + ", and its " + population + ' million people speak ' + language;
@@ -124,3 +124,82 @@ is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark
 // when you input 1
 // 8. Reflect on why we should use the === operator and type conversion in this
 // situation
+
+/* LECTURE: Logical Operators
+1. Comment out the previous code so the prompt doesn't get in the way
+2. Let's say Sarah is looking for a new country to live in. She wants to live in a
+country that speaks english, has less than 50 million people and is not an
+island.
+3. Write an if statement to help Sarah figure out if your country is right for her.
+You will need to write a condition that accounts for all of Sarah's criteria. Take
+your time with this, and check part of the solution if necessary.
+4. If yours is the right country, log a string like this: 'You should live in Portugal :)'. If
+not, log 'Portugal does not meet your criteria :('
+5. Probably your country does not meet all the criteria. So go back and temporarily
+change some variables in order to make the condition true (unless you live in
+Canada :D) */
+
+// if (language === 'English' && population < 50000000 && !isIsland) {
+//     console.log(`You should live in ${country}.`);
+// } else {
+//     console.log(`${country} does not meet your criteria :(`);
+// }
+
+/* Coding Challenge #3
+There are two gymnastics teams, Dolphins and Koalas. They compete against each
+other 3 times. The winner with the highest average score wins a trophy!
+Your tasks:
+1. Calculate the average score for each team, using the test data below
+2. Compare the team's average scores to determine the winner of the competition,
+and print it to the console. Don't forget that there can be a draw, so test for that
+as well (draw means they have the same average score)
+3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a
+team only wins if it has a higher score than the other team, and the same time a
+score of at least 100 points. Hint: Use a logical operator to test for minimum
+score, as well as multiple else-if blocks 😉
+4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when
+both teams have the same score and both have a score greater or equal 100
+points. Otherwise, no team wins the trophy
+
+Test data:
+Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+ */
+//1
+// const dolphinsAverageScore = Math.trunc((96 + 108 + 89) / 3) 
+// const koalasAverageScore =  Math.trunc((88 + 91 + 110) / 3)
+// console.log(dolphinsAverageScore, koalasAverageScore);
+//2
+// if (dolphinsAverageScore > koalasAverageScore) {
+//     console.log('The winner is the Dolphins team!');
+// } else if (dolphinsAverageScore < koalasAverageScore) {
+//     console.log('The Winner is the Koala team!');
+// } else {
+//     console.log('Its a tie!');
+// };
+//3
+// const dolphinsAverageScore = Math.trunc((97 + 112 + 123) / 3) 
+// const koalasAverageScore =  Math.trunc((109 + 95 + 106) / 3)
+
+// if (dolphinsAverageScore > koalasAverageScore && dolphinsAverageScore >= 100) {
+//     console.log('The winner is the Dolphins team!');
+// } else if (dolphinsAverageScore < koalasAverageScore && koalasAverageScore >= 100){
+//     console.log('The Winner is the Koala team!');
+// } else if (dolphinsAverageScore === koalasAverageScore && dolphinsAverageScore >= 100 && koalasAverageScore>= 100) {
+//     console.log(`Unbelievable it's a tie!`)
+// } else {
+//     console.log('Neither team had a higher score than the other and also scored over 100 points!');
+// };
+//4
+// const dolphinsAverageScore = Math.trunc((97 + 112 + 101) / 3) 
+// const koalasAverageScore =  Math.trunc((109 + 95 + 106) / 3)
+// if (dolphinsAverageScore > koalasAverageScore && dolphinsAverageScore >= 100) {
+//     console.log('The winner is the Dolphins team!');
+// } else if (dolphinsAverageScore < koalasAverageScore && koalasAverageScore >= 100){
+//     console.log('The Winner is the Koala team!');
+// } else if (dolphinsAverageScore === koalasAverageScore && dolphinsAverageScore >= 100 && koalasAverageScore>= 100) {
+//     console.log(`Unbelievable it's a tie!`)
+// } else {
+//     console.log('Neither team had a higher score than the other and also scored over 100 points!');
+// };
