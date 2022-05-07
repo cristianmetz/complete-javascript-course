@@ -135,4 +135,30 @@ if(height) {
 } else {
     console.log("Height is UNDEFINED")
 }
+
+
+//Equality Operatos: == vs. ===
+const age = 18;
+if (age === 18) console.log(`You just beacame an adult (strict)`); //Values must be identical and does not convert values
+
+if (age == 18) console.log(`You just beacame an adult (loose)`); //does self coercion, ex: string to number. DO NOT USE IF POSSIBLE
+
+const favoriteNumber = Number(prompt("What's your favorite number?"));
+console.log(favoriteNumber);
+console.log(typeof(favoriteNumber));
+
+if (favoriteNumber === 8) {
+    console.log('Cool 8 is an amazing number');
+} else if (favoriteNumber === 7) {
+    console.log('7 is also a cool number');
+} else if (favoriteNumber === 9) {
+    console.log('9 is also a cool number');
+} else {
+    console.log("Number is not 8, 7 or 91");
+};
+
+if (favoriteNumber !== 8) {
+    console.log('Why not choose 8?');
+}
+
 */

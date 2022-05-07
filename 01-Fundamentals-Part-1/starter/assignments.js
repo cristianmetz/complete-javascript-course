@@ -89,3 +89,38 @@ is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark
 '19' - '13' + 17; //23
 '123' < 57; //false
 5 + 6 + '4' + 9 - 4 - 2; //1143 
+
+// LECTURE: Equality Operators: == vs. ===
+// 1. Declare a variable 'numNeighbours' based on a prompt input like this:
+// prompt('How many neighbour countries does your country
+// have?');
+// let numNeighbours = prompt('How many neighbour countries does your country have?');
+// let numNeighbours = Number(prompt('How many neighbour countries does your country have?'));
+// 2. If there is only 1 neighbour, log to the console 'Only 1 border!' (use loose equality
+// == for now)
+// if (numNeighbours == 1) console.log('Only 1 border!');
+// 3. Use an else-if block to log 'More than 1 border' in case 'numNeighbours'
+// is greater than 1
+// if (numNeighbours == 1) {
+//     console.log('Only 1 border!');
+// } else if (numNeighbours > 1) {
+//     console.log('More than 1 border!');
+// }
+// 4. Use an else block to log 'No borders' (this block will be executed when
+// 'numNeighbours' is 0 or any other value)
+// if (numNeighbours === 1) {
+//     console.log('Only 1 border!');
+// } else if (numNeighbours > 1) {
+//     console.log('More than 1 border!');
+// } else {
+//     console.log('No borders!');
+// };
+// 5. Test the code with different values of 'numNeighbours', including 1 and 0.
+// 6. Change == to ===, and test the code again, with the same values of
+// 'numNeighbours'. Notice what happens when there is exactly 1 border! Why
+// is this happening?
+//--It's happening because the prompt input is a string value and it is not === to the number value 1. It does not convert the string like the loose == equality operator
+// 7. Finally, convert 'numNeighbours' to a number, and watch what happens now
+// when you input 1
+// 8. Reflect on why we should use the === operator and type conversion in this
+// situation
