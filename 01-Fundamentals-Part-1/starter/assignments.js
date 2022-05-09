@@ -203,3 +203,42 @@ Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 // } else {
 //     console.log('Neither team had a higher score than the other and also scored over 100 points!');
 // };
+
+/* LECTURE: The switch Statement
+1. Use a switch statement to log the following string for the given 'language':
+chinese or mandarin: 'MOST number of native speakers!'
+spanish: '2nd place in number of native speakers'
+english: '3rd place'
+hindi: 'Number 4'
+arabic: '5th most spoken language'
+for all other simply log 'Great language too :D'
+*/
+
+let spokenLanguage = 'english'
+
+switch (spokenLanguage) {
+  case 'chinese':
+  case 'mandarin':
+    console.log('Most number of native speakers!');
+    break;
+  
+  case 'spanish':
+    console.log('2nd place in number of native speakers!');
+    break;
+  
+  case 'english':
+    console.log('3rd place');
+    break;
+  
+  case 'hindi':
+    console.log('Number 4');
+    break;
+
+  case 'arabic':
+    console.log('5th most spoken language');
+    break;
+
+  default:
+    console.log('Great language too :D');
+}
+
