@@ -125,25 +125,63 @@ Test data:
 § Data 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27
 */
 
-const calcAverage = (firstScore, secondScore, thirdScore) => (firstScore + secondScore + thirdScore) / 3;
+// const calcAverage = (firstScore, secondScore, thirdScore) => (firstScore + secondScore + thirdScore) / 3;
 
-let avgDolhins = calcAverage(44, 23, 71);
-let avgKoalas = calcAverage(65,54,49);
+// let avgDolhins = calcAverage(44, 23, 71);
+// let avgKoalas = calcAverage(65,54,49);
 
-function checkWinner (avgDolhins, avgKoalas) {
-    if (avgDolhins >= avgKoalas*2) {
-        console.log(`Dolphins win 🏆(${avgDolhins} vs. ${avgKoalas})`);
-    } else if (avgKoalas >= avgDolhins*2) {
-        console.log(`Koalas win 🏆(${avgKoalas} vs. ${avgDolhins})`);
-    } else {
-        console.log(`No Team Wins 🚩`);
-    }
-}
+// function checkWinner (avgDolhins, avgKoalas) {
+//     if (avgDolhins >= avgKoalas*2) {
+//         console.log(`Dolphins win 🏆(${avgDolhins} vs. ${avgKoalas})`);
+//     } else if (avgKoalas >= avgDolhins*2) {
+//         console.log(`Koalas win 🏆(${avgKoalas} vs. ${avgDolhins})`);
+//     } else {
+//         console.log(`No Team Wins 🚩`);
+//     }
+// }
 
-console.log(checkWinner(avgDolhins,avgKoalas));
+// console.log(checkWinner(avgDolhins,avgKoalas));
 
-//test 2
-avgDolhins= calcAverage(85, 54, 41);
-avgKoalas = calcAverage(23, 34, 27);
+// //test 2
+// avgDolhins= calcAverage(85, 54, 41);
+// avgKoalas = calcAverage(23, 34, 27);
 
-console.log(checkWinner(avgDolhins,avgKoalas));
+// console.log(checkWinner(avgDolhins,avgKoalas));
+
+/*
+LECTURE: Basic Array Operations (Methods)
+1. Create an array containing all the neighbouring countries of a country of your choice. Choose a country which has at least 2 or 3 neighbours. Store the array into a variable called 'neighbours'
+2. At some point, a new country called 'Utopia' is created in the neighbourhood of your selected country. So add it to the end of the 'neighbours' array
+3. Unfortunately, after some time, the new country is dissolved. So remove it from the end of the array
+4. If the 'neighbours' array does not include the country ‘Germany’, log to the console: 'Probably not a central European country :D'
+5. Change the name of one of your neighbouring countries. To do that, find the index of the country in the 'neighbours' array, and then use that index to change the array at that index position. For example, you can search for 'Sweden' in the array, and then replace it with 'Republic of Sweden'.
+*/
+// //1
+// const neighbours = ['CHN', 'SA', 'NA', 'EU'];
+// console.log(neighbours);
+// //2
+// neighbours.push('Utopia');
+// console.log(neighbours);
+// //3
+// neighbours.pop();
+// console.log(neighbours);
+// //4
+// if (!neighbours.includes('Germany')) {
+//   console.log('Probably not a central European country :D');
+// }
+// //5
+// const naIndex = neighbours.indexOf('NA');
+// console.log(naIndex);
+// neighbours[2] = 'Republic of Sweden'
+// console.log(neighbours);
+
+/*
+Coding Challenge #2
+Steven is still building his tip calculator, using the same rules as before: Tip 15% of the bill if the bill value is between 50 and 300, and if the value is different, the tip is
+20%.
+Your tasks:
+1. Write a function 'calcTip' that takes any bill value as an input and returns the corresponding tip, calculated based on the rules above (you can check out the code from first tip calculator challenge if you need to). Use the function type you like the most. Test the function using a bill value of 100
+2. And now let's use arrays! So create an array 'bills' containing the test data below
+3. Create an array 'tips' containing the tip value for each bill, calculated from the function you created before
+4. Bonus: Create an array 'total' containing the total values, so the bill + tip Test data: 125, 555 and 44 
+*/

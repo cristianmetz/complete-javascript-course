@@ -116,4 +116,82 @@ const yearsUntillRetirement = function (birthYear, firstName) {
 }
 console.log(yearsUntillRetirement(1988, 'Cristian'));
 console.log(yearsUntillRetirement(1950, 'Jonas'));
+
+
+//Intro to Arrays
+const friend1 = 'Michael';
+const friend2 = 'Stephen';
+const friend3 = 'Peter';
+
+const friends = ['Michael', 'Stephen', 'Peter'];
+console.log(friends);
+
+const y = new Array(1991, 1988, 2020);
+console.log(y);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length -1]);
+
+friends[2] = 'Jay';
+console.log(friends);
+
+const firstName = 'Cristian'
+const cristian = [firstName, 'Metz', 2037 - 1988, 'IT', friends];
+console.log(cristian);
+console.log(cristian.length);
+
+//Exercise
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+}
+
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length -1]);
+console.log(age1, age2, age3);
+
+const ages = [calcAge(years[0]),calcAge(years[1]), calcAge(years[years.length -1])];
+console.log(ages);
+
+
+
+// Basic Array Operators (Methods)
+//Add elements
+const friends = ['Michael', 'Stephen', 'Peter'];
+//Push method adds elements to the end of an array
+const newLength = friends.push('Jay');
+console.log(friends);
+console.log(newLength);
+//unshift adds elements to the beginning of an array
+friends.unshift('John');
+console.log(friends);
+
+//Remove elements
+friends.pop(); //Removes the last element
+const popped = friends.pop(); //Returns the removed element
+console.log(popped);
+console.log(friends);
+
+//Remove the first element from an array
+friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf('Stephen'));
+console.log(friends.indexOf('Bob'));
+
+//Includes returns true if the element is in the array and false if it is not
+friends.push(23);
+console.log(friends.includes('Stephen'));
+console.log(friends.includes('Bob'));
+console.log(friends.includes('23')); //It tests eith === equality
+
+if (friends.includes('Stephen')) {
+  console.log(`You have a friend called Stephen`);
+}
+
 */
