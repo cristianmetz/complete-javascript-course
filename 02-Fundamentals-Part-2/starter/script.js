@@ -194,4 +194,80 @@ if (friends.includes('Stephen')) {
   console.log(`You have a friend called Stephen`);
 }
 
+
+
+//Intro to Objects
+
+const cristian = {
+    firstName: 'Cristian',
+    lastName: 'Metz',
+    age: 2037 - 1988,
+    job: 'IT',
+    friends: ['Michael', 'Stephen', 'Peter']
+};
+console.log(cristian);
+
+//Dot Notation
+console.log(cristian.lastName);
+
+// Bracket Notation
+console.log(cristian['lastName']);
+
+const nameKey = 'Name';
+console.log(cristian['first' + nameKey]);
+console.log(cristian['last' + nameKey]);
+
+const interestedIn = prompt('What do you want to know about Cristian, Choose between firstName, lastName, age, job, and friends');
+
+if (cristian[interestedIn]) {
+    console.log(cristian[interestedIn]);
+} else {
+    console.log(`${interestedIn} is not a property of the desired object. Wrong request! Choose between firstName, lastName, age, job, and friends`)
+}
+//how to add new properties to object
+//Dot Notation
+cristian.location = 'Florida';
+// Bracket Notation
+cristian['instagram'] = '@unocmetz';
+console.log(cristian);
+
+//Lecture Challenge, write a sentence in a dynamic way
+// "Jonas has 3 friends, and his best friend is called Michael"
+const sentence = `${cristian['firstName']} has ${cristian.friends.length} friends, and his best friend is called ${cristian.friends[0]}`
+console.log(sentence);
+
+
+// Object Methods
+const cristian = {
+    firstName: 'Cristian',
+    lastName: 'Metz',
+    age: 1988,
+    job: 'IT',
+    friends: ['Michael', 'Stephen', 'Peter'],
+    hasDriversLicense: true,
+
+    // calcAge: function(age) {
+    //     return 2037-age;
+    // }
+
+    calcAge: function() {
+        this.age = 2037-this.age
+        return 2037- this.age;
+    },
+
+    getSummary: function() {
+        return `${this.firstName} is a ${this.calcAge()}-year old IT, and he ${this.hasDriversLicense ? 'has a' : 'does not have a'} drivers license.`
+    }
+
+};
+
+console.log(cristian.calcAge());
+console.log(cristian.age);
+// console.log(cristian['calcAge'](1988));
+
+//lecture challenge
+//write a method called getSummary , should return a string that summaries the data about cristian.
+
+console.log(cristian.getSummary());
+
 */

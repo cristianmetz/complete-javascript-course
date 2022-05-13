@@ -188,23 +188,112 @@ Your tasks:
 Test data: 125, 555 and 44
 
 */
-//1 //2
-const bill = [125, 555, 44];
+// //1 //2
+// const bill = [125, 555, 44];
 
-function calcTip(bill) {
-  if (bill >= 50 && bill <= 300) {
-    let tip = bill * .15;
-    // console.log(tip);
-    return tip;
-  } else {
-    let tip = bill * .20;
-    // console.log(tip);
-    return tip;
-  }
-}
-//3
-const tips = [calcTip(bill[0]), calcTip(bill[1]), calcTip(bill[2])];
-console.log(tips);
-//4 BONUS
-const total = [tips[0]+bill[0], tips[1]+bill[1], tips[2]+bill[2]];
-console.log(total);
+// function calcTip(bill) {
+//   if (bill >= 50 && bill <= 300) {
+//     let tip = bill * .15;
+//     return tip;
+//   } else {
+//     let tip = bill * .20;
+//     return tip;
+//   }
+// }
+// //3
+// const tips = [calcTip(bill[0]), calcTip(bill[1]), calcTip(bill[2])];
+// console.log(tips);
+// //4 BONUS
+// const total = [tips[0]+bill[0], tips[1]+bill[1], tips[2]+bill[2]];
+// console.log(total);
+
+/*
+LECTURE: Introduction to Objects
+1. Create an object called 'myCountry' for a country of your choice, containing
+properties 'country', 'capital', 'language', 'population' and 'neighbours' (an array like we used in previous assignments)
+*/
+
+// const myCountry = {
+//     country: 'United Stated of America',
+//     capital: 'Washington D.C.',
+//     language: 'English',
+//     population: 330,
+//     neighbours: ['Canada', 'Mexico']
+// }
+// console.log(myCountry);
+
+/*
+ LECTURE: Dot vs. Bracket Notation
+1. Using the object from the previous assignment, log a string like this to the
+console: 'Finland has 6 million finnish-speaking people, 3 neighbouring countries
+and a capital called Helsinki.'
+2. Increase the country's population by two million using dot notation, and then
+decrease it by two million using brackets notation.
+ */
+// //1
+//  console.log(`${myCountry.country} has ${myCountry.population} million people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry['capital']}`);
+//  //2
+//  myCountry.population = 332;
+//  console.log(myCountry.population);
+//  myCountry['population'] = 330;
+//  console.log(myCountry.population);
+
+/*
+LECTURE: Object Methods
+1. Add a method called 'describe' to the 'myCountry' object. This method
+will log a string to the console, similar to the string logged in the previous
+assignment, but this time using the 'this' keyword.
+2. Call the 'describe' method
+3. Add a method called 'checkIsland' to the 'myCountry' object. This
+method will set a new property on the object, called 'isIsland'.
+'isIsland' will be true if there are no neighbouring countries, and false if
+there are. Use the ternary operator to set the property.
+*/
+
+// //1
+// const myCountry = {
+//     country: 'United Stated of America',
+//     capital: 'Washington D.C.',
+//     language: 'English',
+//     population: 330,
+//     neighbours: ['Canada', 'Mexico'],
+//     describe: function() {
+//         return `${this.country} has ${this.population} million people, ${this.neighbours.length} neighbouring countries and a capital called ${this['capital']}`
+//     },
+
+//     checkIsland: function() {
+//         this.isIsland = this.neighbours.length > 0 ? this.isIsland = false : this.isIsland = true;
+//         return this.isIsland;
+//         }
+
+//     // checkIsland: function() {
+//     //     this.isIsland = ''
+//     //     if (this.neighbours.length > 0) {
+//     //         return this.isIsland = false;
+//     //     } else {
+//     //         return this.isIsland = true;
+//     //     }
+//     // }
+
+// };
+// //2
+// console.log(myCountry.describe());
+// //3
+// console.log(myCountry.checkIsland());
+// console.log(myCountry.isIsland);
+// console.log(myCountry);
+
+/*
+Coding Challenge #3
+Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass
+/ (height * height) (mass in kg and height in meter)
+Your tasks:
+1. For each of them, create an object with properties for their full name, mass, and height (Mark Miller and John Smith)
+2. Create a 'calcBMI' method on each object to calculate the BMI (the same
+method on both objects). Store the BMI value to a property, and also return it
+from the method
+3. Log to the console who has the higher BMI, together with the full name and the
+respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
+Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m
+tall.
+ */
