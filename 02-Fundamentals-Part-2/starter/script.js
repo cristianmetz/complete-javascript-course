@@ -270,4 +270,14 @@ console.log(cristian.age);
 
 console.log(cristian.getSummary());
 
+
+
+// console.log('Lifting weight rep 1 🏋️‍♂️');
+// console.log('Lifting weight rep 2 🏋️‍♂️');
+// console.log('Lifting weight rep 3 🏋️‍♂️');
+
+//for loop keeps running while condition is True
+for(let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights rep ${rep} 🏋️‍♂️`);
+}
 */
