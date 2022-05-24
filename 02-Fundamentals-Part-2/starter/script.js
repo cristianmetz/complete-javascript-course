@@ -280,4 +280,53 @@ console.log(cristian.getSummary());
 for(let rep = 1; rep <= 10; rep++) {
     console.log(`Lifting weights rep ${rep} 🏋️‍♂️`);
 }
+
+
+//Looping Arrays, Breaking and Continuing
+
+const cristian = [
+    'Cristian',
+    'Metz',
+    2037 - 1988,
+    'IT',
+    ['Michael', 'Stephen', 'Peter'],
+    true
+];
+
+const types = [];
+
+for(let i = 0; i < cristian.length ; i++) {
+    //Reading from cristian array
+    console.log(cristian[i], typeof cristian[i]);
+    // Adding to types array
+    // types[i] = typeof cristian[i];
+    types.push(typeof cristian[i]);
+}
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    
+    ages.push(2037 - years[i]);
+
+}
+
+console.log(ages);
+
+//Continue for loop, exits current itteration of the loop and continue to the next one
+console.log(`--ONLY STRINGS--`);
+for(let i = 0; i < cristian.length ; i++) {
+    if (typeof cristian[i] !== 'string') continue;
+
+    console.log(cristian[i], typeof cristian[i]);
+}
+//Break is used to completely terminate the loop.
+console.log(`--ONLY FIRST NUMBER--`);
+for(let i = 0; i < cristian.length ; i++) {
+    if (typeof cristian[i] === 'number') break;
+
+    console.log(cristian[i], typeof cristian[i]);
+}
 */

@@ -349,3 +349,24 @@ function 'percentageOfWorld1' that you created earlier
 'percentages' array that we created manually in the previous assignment,
 and reflect on how much better this solution is
  */
+
+// function percentageOfWorld1 (population) {
+//     return (population/7900)*100
+// }
+
+// const chinaPopulationPercent1 = percentageOfWorld1(1441);
+// console.log(Math.trunc(chinaPopulationPercent1));
+
+// const usaPopulationPercent1 = percentageOfWorld1(329.5);
+// console.log(Math.trunc(usaPopulationPercent1));
+
+// const europePopulationPercent1 = percentageOfWorld1(746.4);
+// console.log(Math.trunc(europePopulationPercent1));
+
+// //1 //2 //3
+// const population = [1441, 329.5, 746.4]
+// const percentages2 = []
+// for( let i = 0; i < population.length; i++) {
+//     percentages2.push(Math.trunc(percentageOfWorld1(population[i])));
+// }
+// console.log(percentages2);
