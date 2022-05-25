@@ -370,3 +370,29 @@ and reflect on how much better this solution is
 //     percentages2.push(Math.trunc(percentageOfWorld1(population[i])));
 // }
 // console.log(percentages2);
+
+/*
+LECTURE: Looping Backwards and Loops in Loops
+1. Store this array of arrays into a variable called 'listOfNeighbours'
+[['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden',
+'Russia']];
+2. Log only the neighbouring countries to the console, one by one, not the entire
+arrays. Log a string like 'Neighbour: Canada' for each country
+3. You will need a loop inside a loop for this. This is actually a bit tricky, so don't
+worry if it's too difficult for you! But you can still try to figure this out anyway 😉
+ */
+
+// const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden',
+// 'Russia']];
+
+// console.log(`-----------------------------------------------`)
+// for (let i = 0; i < listOfNeighbours.length; i++) {
+//     for (let x = 0; x < listOfNeighbours[i].length; x++) {
+//         console.log(`Country: ${listOfNeighbours[i][x]}`)
+//         for (let y = listOfNeighbours[i].length - 1; y >= 0; y--) {
+//             if (listOfNeighbours[i][y] === listOfNeighbours[i][x]) continue
+//             else console.log(`Neighbour: ${listOfNeighbours[i][y]}`)
+//         }
+//         console.log(`------------------------------------------`)
+//     }
+// }

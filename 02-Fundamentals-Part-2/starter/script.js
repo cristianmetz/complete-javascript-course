@@ -329,4 +329,29 @@ for(let i = 0; i < cristian.length ; i++) {
 
     console.log(cristian[i], typeof cristian[i]);
 }
+
+
+//Looking Backwards
+const cristian = [
+    'Cristian',
+    'Metz',
+    2037 - 1988,
+    'IT',
+    ['Michael', 'Stephen', 'Peter'],
+    true
+];
+
+for (let i = cristian.length -1; i >= 0; i--) {
+    console.log(i, cristian[i]);
+}
+
+// Loops in Loops
+for( let exercise = 1; exercise <=3; exercise++){
+    console.log(`--------------Starting Exercise ${exercise}`);
+
+    for(let rep = 1; rep < 6; rep++){
+        console.log(` Exercise ${exercise}: Lifting weight repetition ${rep}🏋️‍♂️`)
+    }
+}
 */
+
