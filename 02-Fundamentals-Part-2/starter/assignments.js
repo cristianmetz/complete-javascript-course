@@ -403,3 +403,26 @@ but this time using a while loop (call the array 'percentages3')
 2. Reflect on what solution you like better for this task: the for loop or the while
 loop?
  */
+
+// //1
+// function percentageOfWorld1 (population) {
+//     return (population/7900)*100
+// }
+
+// const population = [1441, 329.5, 746.4]
+// // const percentages2 = []
+// // for( let i = 0; i < population.length; i++) {
+// //     percentages2.push(Math.trunc(percentageOfWorld1(population[i])));
+// // }
+// // console.log(percentages2);
+
+// //2
+
+// const percentages3 = [];
+// let i = 0
+// while (i < population.length) {
+//     const perc = Math.trunc(percentageOfWorld1(population[i]));
+//     percentages3.push(perc);
+//     i++
+// }
+// console.log(percentages3);
